@@ -1,5 +1,3 @@
-// Fifteen.java
-
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
@@ -16,7 +14,6 @@ public class Fifteen {
     }
 }
 
-// === Framework ===
 
 class WordFrequencyApp {
     ArrayList<LoadHandler> loadEvents = new ArrayList<>();
@@ -48,7 +45,6 @@ class WordFrequencyApp {
     }
 }
 
-// === Interfaces ===
 
 interface LoadHandler {
     void onLoad(String file);
@@ -66,7 +62,6 @@ interface WordHandler {
     void handle(String word);
 }
 
-// === Stop Word Filter ===
 
 class StopWordFilter implements LoadHandler {
     ArrayList<String> stopWords;
@@ -97,7 +92,6 @@ class StopWordFilter implements LoadHandler {
     }
 }
 
-// === Data Storage ===
 
 class DataStorage implements LoadHandler, WorkHandler {
     String data = "";
@@ -137,7 +131,7 @@ class DataStorage implements LoadHandler, WorkHandler {
     }
 }
 
-// === Word Frequency Counter ===
+
 
 class WordFrequencyCounter implements WordHandler, EndHandler {
     HashMap<String, Integer> freqs = new HashMap<>();
