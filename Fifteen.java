@@ -5,7 +5,6 @@ import java.util.*;
 public class Fifteen {
 
     public static void main(String[] args) {
-        // Kick off the Hollywood-style app
         WordFrequencyApp app = new WordFrequencyApp();
         StopWordFilter stopFilter = new StopWordFilter(app);
         DataStorage storage = new DataStorage(app, stopFilter);
