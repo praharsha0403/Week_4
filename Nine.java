@@ -107,7 +107,6 @@ public class Nine {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        // Add single-letter words
         for (char c = 'a'; c <= 'z'; c++) {
             stopWords.add(Character.toString(c));
         }
