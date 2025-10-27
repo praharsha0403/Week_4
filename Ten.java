@@ -1,5 +1,3 @@
-
-
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
@@ -20,7 +18,6 @@ public class Ten {
               .printme();
     }
 
-    // --- The Wrapper ---
     static class TheOne<T> {
         private T value;
 
@@ -38,12 +35,10 @@ public class Ten {
         }
     }
 
-    // --- Functional interfaces ---
     interface Function<T, R> {
         R apply(T x);
     }
 
-    // --- Transformations ---
 
     static class FileReaderFunc implements Function<String, String> {
         public String apply(String path) {
