@@ -53,7 +53,6 @@ public class Nine {
 
     static class Done implements ICallback<Void> {
         public void call(Void x) {
-Programming Styles week3
 
         }
     }
