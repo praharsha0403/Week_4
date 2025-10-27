@@ -1,80 +1,49 @@
-# 📚 EPS Week 4 - Java Styles: 9, 10, 15
+## Nine.java
 
-This project explores different programming styles (from *Exercises in Programming Style*) implemented in Java. Each file represents a different style of structuring logic, reading input, and producing output.
+This was my starting point — I wrote it to read input from a file (`input.txt`) instead of typing values manually. I did this to understand how Java handles file I/O using classes like `File`, `Scanner`, or `BufferedReader`. Once the data is read, the program processes numbers or strings.
 
----
+it does things like:
 
-## 🧩 `Nine.java`
+- reading line by line  
+- splitting values using spaces or commas  
+- performing calculations or checks (e.g., sum, count, pattern match)
 
-This was my starting point — I wrote it to read input from a file (`input.txt`) instead of typing values manually.
+I printed the final output on the console to verify correctness.Basically, I learned how to open a file, read data safely, handle exceptions, and close resources properly.
 
-### 🔍 What it does:
-- Reads input using Java I/O classes like `File`, `Scanner`, and `BufferedReader`
-- Processes numbers or strings by:
-  - Reading line by line
-  - Splitting values by space or comma
-  - Performing calculations (sum, count, etc.)
-- Handles exceptions and closes resources properly
-- Prints output to console for easy debugging
 
-### ✅ What I learned:
-- How to open and read files safely in Java
-- How to parse and manipulate string input
-- Basic error handling
+## Ten.java
 
----
+This file focuses on conditional logic and looping. I wrote this to test how nested conditions (`if-else`, `switch`) and iterative loops (`for`, `while`) work together. It reads data from `input.txt` (or takes user input), processes it based on certain rules, and prints meaningful results.
 
-## 🔢 `Ten.java`
+I did this to simulate real-world decision-making logic, like checking ranges, comparing values, or filtering data.
 
-This file focuses on **conditional logic and loops**.
+this also helped me understand type conversion (`string → int`) and handling invalid data gracefully.
 
-### 🔍 What it does:
-- Uses nested `if-else`, `switch`, and loops (`for`, `while`)
-- Reads data from `input.txt`
-- Applies rules to filter, calculate, or transform the data
-- Demonstrates input validation, type casting (e.g., `String → int`)
+in short, `Ten.java` was me experimenting with logic control, turning raw input into structured results using loops and decisions.
 
-### ✅ What I learned:
-- How to use conditionals and loops together
-- How to simulate real-world logic flows
-- Converting and validating input
 
----
 
-## 🔁 `Fifteen.java`
+## Fifteen.java
 
-This one was more advanced — it implements a **callback-style control flow** (EPS Style #15).
+This was a little more advanced. I implemented a combination of recursion and function calls (depending on the exact task inside). The goal was to organize code into multiple functions, each doing a small, clear task.
 
-### 🔍 What it does:
-- Breaks logic into **modular components** using interfaces and classes
-- Uses an "event-driven" pattern (Hollywood style: "Don’t call us, we’ll call you")
-- Loads data → Processes → Outputs frequency
-- Uses interfaces like:
-  - `LoadHandler`
-  - `WorkHandler`
-  - `EndHandler`
-  - `WordHandler`
+I did this to move from writing everything in `main()` to creating modular and reusable methods.
 
-### ✅ What I learned:
-- How to organize Java code using interfaces and callbacks
-- How to avoid putting everything in `main()`
-- Error handling with `try-catch`
-- Thinking in small, testable building blocks
+I also made sure the code handled errors smoothly using `try-catch` blocks or safe input handling.
 
----
+this program helped me really get the hang of structuring Java programs thinking in terms of small, logical building blocks.
 
-## 📂 `input.txt`
 
-This file holds **test data** for all Java programs.
+## input.txt
 
-### 🔍 Why I used it:
-- Avoids manual input every time I run a program
-- Makes testing faster and repeatable
-- Ensures consistency across test runs
+this file holds test data for all the Java files.
 
----
+instead of entering numbers or text every time, I placed them in this file so I could just run the code directly and see results.
 
-## ▶️ How to Run
+it helped me test multiple scenarios quickly and keep consistency across runs.
+
+
+## 🔧 How to Run
 
 ```bash
 javac Nine.java
