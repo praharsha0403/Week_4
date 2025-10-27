@@ -76,7 +76,7 @@ public class Ten {
                 String[] parts = raw.split(",");
                 for (String w : parts) stops.add(w);
             } catch (Exception e) {
-                // fallback
+
             }
             for (char c = 'a'; c <= 'z'; c++) {
                 stops.add(String.valueOf(c));
