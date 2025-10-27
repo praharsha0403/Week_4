@@ -13,7 +13,7 @@ I printed the final output on the console to verify correctness.Basically, I lea
 
 ## Ten.java
 
-This file focuses on conditional logic and looping. I wrote this to test how nested conditions (`if-else`, `switch`) and iterative loops (`for`, `while`) work together. It reads data from `input.txt` (or takes user input), processes it based on certain rules, and prints meaningful results.
+This file focuses on conditional logic and looping. I wrote this to test how nested conditions (`if-else`, `switch`) and iterative loops (`for`, `while`) work together. It reads data from `input.txt` , processes it based on certain rules, and prints meaningful results.
 
 I did this to simulate real-world decision-making logic, like checking ranges, comparing values, or filtering data.
 
@@ -25,27 +25,34 @@ in short, `Ten.java` was me experimenting with logic control, turning raw input 
 
 ## Fifteen.java
 
-This was a little more advanced. I implemented a combination of recursion and function calls (depending on the exact task inside). The goal was to organize code into multiple functions, each doing a small, clear task.
+This was a little more advanced. I implemented a combination of recursion and function calls. The goal was to organize code into multiple functions, each doing a small, clear task.
 
 I did this to move from writing everything in `main()` to creating modular and reusable methods.
 
 I also made sure the code handled errors smoothly using `try-catch` blocks or safe input handling.
 
-this program helped me really get the hang of structuring Java programs thinking in terms of small, logical building blocks.
+This program helped me really get the hang of structuring Java programs thinking in terms of small, logical building blocks.
 
 
 ## input.txt
 
-this file holds test data for all the Java files.
+This file holds test data for all the Java files.
 
-instead of entering numbers or text every time, I placed them in this file so I could just run the code directly and see results.
+Instead of entering numbers or text every time, I placed them in this file so I could just run the code directly and see results.
 
-it helped me test multiple scenarios quickly and keep consistency across runs.
+It helped me test multiple scenarios quickly and keep consistency across runs.
 
 
 ## 🔧 How to Run
 
-```bash
+```
 javac Nine.java
 javac Ten.java
 javac Fifteen.java
+```
+
+```
+java Nine input.txt
+java Ten input.txt
+java Fifteen input.txt
+```
